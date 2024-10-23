@@ -16,11 +16,12 @@ def contactUs():
 
 @app.route("/<name>")
 def user(name):
-    return f"Hello {name}!"
-
-@app.route("/admin")
-def admin():
+    # return f"Hello {name}!"
     return redirect(url_for("home"))
+
+# @app.route("/admin")
+# def admin():
+#     return redirect(url_for("home"))
 
 if __name__ == "__main__":
     app.run()
